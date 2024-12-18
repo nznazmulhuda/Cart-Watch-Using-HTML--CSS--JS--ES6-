@@ -310,15 +310,21 @@
                 <div
                   class="rounded-[4px] border border-[#DBDFEA] flex items-center"
                 >
-                  <button class="py-[3px] px-[8px]">
+                  <button
+                    class="py-[3px] px-[8px]"
+                    onclick="changeQuantity(-1)"
+                  >
                     <img src="./assets/minus.png" alt="Minus picture" />
                   </button>
 
-                  <span class="py-[3px] px-[26px] border-x border-[#DBDFEA]"
-                    >0</span
+                  <span
+                    id="product_quantity"
+                    class="py-[3px] px-[26px] border-x border-[#DBDFEA]"
                   >
+                    1
+                  </span>
 
-                  <button class="px-[8px]">
+                  <button class="px-[8px]" onclick="changeQuantity(1)">
                     <img src="./assets/plus.png" alt="Plus picture" />
                   </button>
                 </div>

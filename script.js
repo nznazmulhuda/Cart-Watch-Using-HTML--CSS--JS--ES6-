@@ -14,3 +14,12 @@ function changeThumbnail(color) {
 
   thumbnail.src = images[color];
 }
+
+// function to change the quantity
+function changeQuantity(amount) {
+  const quantityValue = document.getElementById("product_quantity"); // get the quantity
+
+  quantity = Math.max(1, quantity + amount); // get the new quantity
+
+  quantityValue.innerHTML = quantity; // update the quantity
+}
