@@ -23,7 +23,9 @@
     <!-- main section -->
     <main>
       <!-- watch section -->
-      <section class="w-full h-screen relative flex items-center justify-center">
+      <section
+        class="w-full h-screen relative flex items-center justify-center"
+      >
         <!-- watch container -->
         <div class="container mx-auto">
           <!-- watch wrapper -->
@@ -340,12 +342,232 @@
         <!-- checkout button -->
         <div class="absolute bottom-5 left-1/2 -translate-x-1/2">
           <button
-          class="py-[8px] px-[24px] text-center rounded-[20px] bg-[#FFBB5A] shadow-lg flex items-center gap-[10px]"
-        >
-          Checkout 
-          <span class="px-[6px] py-[2px] bg-white text-[#364A63] font-[roboto] text-[12px] font-bold rounded-[5px]">2</span>
+            class="py-[8px] px-[24px] text-center rounded-[20px] bg-[#FFBB5A] shadow-lg flex items-center gap-[10px]"
+          >
+            Checkout
+            <span
+              class="px-[6px] py-[2px] bg-white text-[#364A63] font-[roboto] text-[12px] font-bold rounded-[5px]"
+              >2</span
+            >
+          </button>
         </div>
-        </button>
+
+        <!-- cart modal -->
+        <div
+          class="w-full h-screen bg-[#11121b8c] absolute top-0 flex items-center justify-center"
+        >
+          <div class="p-11 bg-white flex flex-col gap-4 rounded-[20px]">
+            <!-- title -->
+            <h2
+              class="text-[#364A63] font-[roboto] text-[22px] font-bold leading-[109.091%]"
+            >
+              Your Cart
+            </h2>
+
+            <!-- all cart list -->
+            <ul>
+              <!-- heading -->
+              <li class="flex items-center border-b border-[#DBDFEA] py-4">
+                <p
+                  class="text-[#8091A7] font-[roboto] text-[14px] leading-[165%] w-[278px]"
+                >
+                  Item
+                </p>
+
+                <p
+                  class="text-[#8091A7] font-[roboto] text-[14px] leading-[165%] w-[62px] text-center"
+                >
+                  Color
+                </p>
+
+                <p
+                  class="text-[#8091A7] font-[roboto] text-[14px] leading-[165%] w-[69px] text-center"
+                >
+                  Size
+                </p>
+
+                <p
+                  class="text-[#8091A7] font-[roboto] text-[14px] leading-[165%] w-[59px] text-center"
+                >
+                  Qnt
+                </p>
+
+                <p
+                  class="text-[#8091A7] font-[roboto] text-[14px] leading-[165%] w-[91px] text-right"
+                >
+                  Price
+                </p>
+              </li>
+
+              <!-- content -->
+              <li class="flex items-center border-b border-[#DBDFEA] py-4">
+                <div class="w-[278px] flex items-center gap-[7.36px]">
+                  <img
+                    src="./assets/black.png"
+                    alt="Black image"
+                    width="36.643px"
+                    height="41.786px"
+                    class="rounded-[3px]"
+                  />
+
+                  <p
+                    class="text-[#364A63] font-[roboto] text-[14px] leading-[165%]"
+                  >
+                    Classy Modern Smart watch
+                  </p>
+                </div>
+
+                <p
+                  class="text-[#364A63] font-[roboto] text-[14px] leading-[165%] w-[62px] text-center"
+                >
+                  Black
+                </p>
+
+                <p
+                  class="text-[#364A63] font-[roboto] text-[14px] leading-[165%] w-[69px] text-center"
+                >
+                  XL
+                </p>
+
+                <p
+                  class="text-[#364A63] font-[roboto] text-[14px] leading-[165%] w-[59px] text-center"
+                >
+                  1
+                </p>
+
+                <p
+                  class="text-[#364A63] font-[roboto] text-[14px] leading-[165%] w-[91px] text-right"
+                >
+                  $99.00
+                </p>
+              </li>
+
+              <li class="flex items-center border-b border-[#DBDFEA] py-4">
+                <div class="w-[278px] flex items-center gap-[7.36px]">
+                  <img
+                    src="./assets/black.png"
+                    alt="Black image"
+                    width="36.643px"
+                    height="41.786px"
+                    class="rounded-[3px]"
+                  />
+
+                  <p
+                    class="text-[#364A63] font-[roboto] text-[14px] leading-[165%]"
+                  >
+                    Classy Modern Smart watch
+                  </p>
+                </div>
+
+                <p
+                  class="text-[#364A63] font-[roboto] text-[14px] leading-[165%] w-[62px] text-center"
+                >
+                  Black
+                </p>
+
+                <p
+                  class="text-[#364A63] font-[roboto] text-[14px] leading-[165%] w-[69px] text-center"
+                >
+                  XL
+                </p>
+
+                <p
+                  class="text-[#364A63] font-[roboto] text-[14px] leading-[165%] w-[59px] text-center"
+                >
+                  1
+                </p>
+
+                <p
+                  class="text-[#364A63] font-[roboto] text-[14px] leading-[165%] w-[91px] text-right"
+                >
+                  $99.00
+                </p>
+              </li>
+
+              <li class="flex items-center border-b border-[#DBDFEA] py-4">
+                <div class="w-[278px] flex items-center gap-[7.36px]">
+                  <img
+                    src="./assets/black.png"
+                    alt="Black image"
+                    width="36.643px"
+                    height="41.786px"
+                    class="rounded-[3px]"
+                  />
+
+                  <p
+                    class="text-[#364A63] font-[roboto] text-[14px] leading-[165%]"
+                  >
+                    Classy Modern Smart watch
+                  </p>
+                </div>
+
+                <p
+                  class="text-[#364A63] font-[roboto] text-[14px] leading-[165%] w-[62px] text-center"
+                >
+                  Black
+                </p>
+
+                <p
+                  class="text-[#364A63] font-[roboto] text-[14px] leading-[165%] w-[69px] text-center"
+                >
+                  XL
+                </p>
+
+                <p
+                  class="text-[#364A63] font-[roboto] text-[14px] leading-[165%] w-[59px] text-center"
+                >
+                  1
+                </p>
+
+                <p
+                  class="text-[#364A63] font-[roboto] text-[14px] leading-[165%] w-[91px] text-right"
+                >
+                  $99.00
+                </p>
+              </li>
+            </ul>
+
+            <!-- total price -->
+            <div class="flex items-center justify-between">
+              <!-- title -->
+              <p
+                class="w-[379px] text-[#373737] font-[roboto] text-[16px] font-bold leading-[137.5%]"
+              >
+                Total
+              </p>
+
+              <!-- total qnt -->
+              <p
+                class="text-[#364A63] font-[roboto] text-[14px] font-bold leading-[242.857%]"
+              >
+                4
+              </p>
+
+              <!-- total price -->
+              <p
+                class="text-[#364A63] font-[roboto] text-[18px] font-bold leading-[242.857%]"
+              >
+                $356.00
+              </p>
+            </div>
+
+            <div class="flex items-center justify-end gap-6">
+              <!-- close modal -->
+              <button
+                class="py-2 px-[18px] text-center border border-[#DBDFEA] rounded-[3px] text-[13px] font-[roboto font-bold leading-[153.846%] text-[#364A63]"
+              >
+                Continue Shopping
+              </button>
+
+              <!-- checkout button -->
+              <button
+                class="py-2 px-[18px] text-center border bg-[#6576FF] rounded-[3px] text-[13px] font-[roboto font-bold leading-[153.846%] text-white"
+              >
+                Checkout
+              </button>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
   </body>
