@@ -8,6 +8,14 @@
     <!-- tailwind setup -->
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- roboto font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- set the website title -->
     <title>Watch Store</title>
   </head>
@@ -15,29 +23,32 @@
     <!-- main section -->
     <main>
       <!-- watch section -->
-      <section class="w-full h-screen">
+      <section class="w-full h-screen relative flex items-center justify-center">
         <!-- watch container -->
-        <div class="container">
+        <div class="container mx-auto">
           <!-- watch wrapper -->
-          <div
-            class="w-full h-full flex items-center justify-center gap-[60px]"
-          >
+          <div class="flex items-center justify-center gap-[60px]">
             <!-- left side watch image -->
-            <aside class="w-[630px] h-[721px]">
+            <aside>
               <img
                 src="./assets/purple.png"
                 alt="Watch picture"
-                class="object-cover"
+                width="630px"
+                height="721px"
               />
             </aside>
 
             <!-- right side watch content -->
-            <aside>
+            <aside class="w-1/2">
               <!-- watch title -->
-              <h1>Classy Modern Smart watch</h1>
+              <h1
+                class="font-[roboto] text-[#364A63] text-[40px] font-bold leading-[110%] mb-[12px]"
+              >
+                Classy Modern Smart watch
+              </h1>
 
               <!-- reviews -->
-              <div class="flex items-center gap-2">
+              <div class="flex items-center gap-2 mb-6">
                 <!-- stars -->
                 <div class="flex items-center">
                   <svg
@@ -101,88 +112,219 @@
                     />
                   </svg>
                 </div>
+
                 <!-- total review -->
-                <p>(2 Reviews)</p>
+                <p
+                  class="text-[#8091A7] font-[roboto] text-[14px] font-normal leading-[165%]"
+                >
+                  (2 Reviews)
+                </p>
               </div>
 
               <!-- price -->
-              <div>
+              <div class="mb-5">
                 <!-- old price -->
-                <span>$99.00</span>
+                <span
+                  class="text-[#8091A7] font-[roboto] text-[20px] font-normal leading-[150%] line-through mr-[5px]"
+                  >$99.00</span
+                >
 
                 <!-- new price -->
-                <span>$79.00</span>
+                <span
+                  class="text-[#6576FF] font-[roboto] text-[24px] font-bold leading-[125%]"
+                  >$79.00</span
+                >
               </div>
 
               <!-- watch description -->
-              <p>
+              <p
+                class="text-[#8091A7] font-[roboto] text-[18px] leading-[166.667%] mb-5"
+              >
                 I must explain to you how all this mistaken idea of denoun cing
                 ple praising pain was born and I will give you a complete
                 account of the system, and expound the actual teaching.
               </p>
 
               <!-- watch type and model -->
-              <div>
+              <div class="flex items-center gap-[43px] mb-5">
                 <!-- type -->
                 <div>
-                  <span>Type</span>
+                  <span
+                    class="text-[#8091A7] font-[roboto] text-[14px] leading-[165%]"
+                    >Type</span
+                  >
 
-                  <h4>Watch</h4>
+                  <h4
+                    class="text-[#364A63] font-[roboto] text-[16px] font-bold leading-[143.75%]"
+                  >
+                    Watch
+                  </h4>
                 </div>
 
                 <!-- model number -->
                 <div>
-                  <span>Model Number</span>
+                  <span
+                    class="text-[#8091A7] font-[roboto] text-[14px] leading-[165%]"
+                    >Model Number</span
+                  >
 
-                  <h3>Forerunner 290XT</h3>
+                  <h4
+                    class="text-[#364A63] font-[roboto] text-[16px] font-bold leading-[143.75%]"
+                  >
+                    Forerunner 290XT
+                  </h4>
                 </div>
               </div>
 
               <!-- brand color -->
-              <div>
+              <div class="mb-5">
                 <!-- title -->
-                <h4>Brand</h4>
+                <h4
+                  class="text-[#364A63] font-[roboto] text-[18px] font-bold leading-[111.111%] mb-[10px]"
+                >
+                  Brand
+                </h4>
 
                 <!-- buttons -->
-                <div>
+                <div class="flex items-center gap-[19px]">
                   <!-- purple button -->
-                  <button></button>
+                  <button>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <circle cx="12" cy="12.5" r="8" fill="#816BFF" />
+                      <circle
+                        cx="12"
+                        cy="12.5"
+                        r="11"
+                        stroke="#816BFF"
+                        stroke-width="2"
+                      />
+                    </svg>
+                  </button>
 
                   <!-- cyan button -->
-                  <button></button>
+                  <button>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="17"
+                      viewBox="0 0 16 17"
+                      fill="none"
+                    >
+                      <circle cx="8" cy="8.5" r="8" fill="#1FCEC9" />
+                    </svg>
+                  </button>
 
                   <!-- blue button -->
-                  <button></button>
+                  <button>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="17"
+                      viewBox="0 0 16 17"
+                      fill="none"
+                    >
+                      <circle cx="8" cy="8.5" r="8" fill="#4B97D3" />
+                    </svg>
+                  </button>
 
                   <!-- black button -->
-                  <button></button>
+                  <button>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="17"
+                      viewBox="0 0 16 17"
+                      fill="none"
+                    >
+                      <circle cx="8" cy="8.5" r="8" fill="#3B4747" />
+                    </svg>
+                  </button>
                 </div>
               </div>
 
               <!-- wrist -->
-              <div>
+              <div class="mb-5">
                 <!-- title -->
-                <h4>Wrist Size</h4>
+                <h4
+                  class="text-[#364A63] font-[roboto] text-[18px] font-bold leading-[111.111%] mb-[10px]"
+                >
+                  Wrist Size
+                </h4>
 
                 <!-- all sizes -->
-                <div>
-                  <button><span>S</span> $69</button>
-                  <button><span>M</span> $79</button>
-                  <button><span>L</span> $89</button>
-                  <button><span>XL</span> $99</button>
+                <div class="flex items-center gap-3">
+                  <button
+                    class="py-2 px-[18px] text-center rounded-[3px] border border-[#6576FF] text-[#8091A7] font-[roboto] text-[12px] leading-[20px]"
+                  >
+                    <span
+                      class="text-[#6576FF] font-[roboto] text-[14px] font-bold leading-[142.857%]"
+                      >S
+                    </span>
+                    $69
+                  </button>
+
+                  <button
+                    class="py-2 px-[18px] text-center rounded-[3px] border border-[#DBDFEA] text-[#8091A7] font-[roboto] text-[12px] leading-[20px]"
+                  >
+                    <span
+                      class="text-[#364A63] font-[roboto] text-[14px] font-bold leading-[142.857%]"
+                      >M
+                    </span>
+                    $79
+                  </button>
+
+                  <button
+                    class="py-2 px-[18px] text-center rounded-[3px] border border-[#DBDFEA] text-[#8091A7] font-[roboto] text-[12px] leading-[20px]"
+                  >
+                    <span
+                      class="text-[#364A63] font-[roboto] text-[14px] font-bold leading-[142.857%]"
+                      >L
+                    </span>
+                    $89
+                  </button>
+
+                  <button
+                    class="py-2 px-[18px] text-center rounded-[3px] border border-[#DBDFEA] text-[#8091A7] font-[roboto] text-[12px] leading-[20px]"
+                  >
+                    <span
+                      class="text-[#364A63] font-[roboto] text-[14px] font-bold leading-[142.857%]"
+                      >XL
+                    </span>
+                    $99
+                  </button>
                 </div>
               </div>
 
               <!-- quantity, add to cart and wishlist -->
-              <div>
+              <div class="flex items-center gap-3">
                 <!-- quantity -->
-                <div>
-                  <button>-</button>
-                  <span>0</span>
-                  <button>+</button>
+                <div
+                  class="rounded-[4px] border border-[#DBDFEA] flex items-center"
+                >
+                  <button class="py-[3px] px-[8px]">
+                    <img src="./assets/minus.png" alt="Minus picture" />
+                  </button>
+
+                  <span class="py-[3px] px-[26px] border-x border-[#DBDFEA]"
+                    >0</span
+                  >
+
+                  <button class="px-[8px]">
+                    <img src="./assets/plus.png" alt="Plus picture" />
+                  </button>
                 </div>
 
-                <button>Add to Cart</button>
+                <button
+                  class="py-2 px-[18px] text-center rounded-[3px] bg-[#6576FF] text-white font-[roboto] text-[13px] font-bold leading-[153.846%]"
+                >
+                  Add to Cart
+                </button>
 
                 <button>
                   <img
@@ -196,7 +338,14 @@
         </div>
 
         <!-- checkout button -->
-        <button>Checkout <span>0</span></button>
+        <div class="absolute bottom-5 left-1/2 -translate-x-1/2">
+          <button
+          class="py-[8px] px-[24px] text-center rounded-[20px] bg-[#FFBB5A] shadow-lg flex items-center gap-[10px]"
+        >
+          Checkout 
+          <span class="px-[6px] py-[2px] bg-white text-[#364A63] font-[roboto] text-[12px] font-bold rounded-[5px]">2</span>
+        </div>
+        </button>
       </section>
     </main>
   </body>
