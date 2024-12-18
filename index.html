@@ -198,6 +198,7 @@
                       height="24"
                       viewBox="0 0 24 24"
                       fill="none"
+                      class="brand"
                     >
                       <circle cx="12" cy="12.5" r="8" fill="#816BFF" />
                       <circle
@@ -218,6 +219,7 @@
                       height="17"
                       viewBox="0 0 16 17"
                       fill="none"
+                      class="brand"
                     >
                       <circle cx="8" cy="8.5" r="8" fill="#1FCEC9" />
                     </svg>
@@ -231,6 +233,7 @@
                       height="17"
                       viewBox="0 0 16 17"
                       fill="none"
+                      class="brand"
                     >
                       <circle cx="8" cy="8.5" r="8" fill="#4B97D3" />
                     </svg>
@@ -244,6 +247,7 @@
                       height="17"
                       viewBox="0 0 16 17"
                       fill="none"
+                      class="brand"
                     >
                       <circle cx="8" cy="8.5" r="8" fill="#3B4747" />
                     </svg>
@@ -352,12 +356,17 @@
         </div>
 
         <!-- checkout button -->
-        <div class="absolute bottom-5 left-1/2 -translate-x-1/2">
+        <div
+          id="checkoutButton"
+          class="absolute bottom-5 left-1/2 -translate-x-1/2 hidden"
+        >
           <button
             class="py-[8px] px-[24px] text-center rounded-[20px] bg-[#FFBB5A] shadow-lg flex items-center gap-[10px]"
+            onclick="checkout()"
           >
             Checkout
             <span
+              id="totalCart"
               class="px-[6px] py-[2px] bg-white text-[#364A63] font-[roboto] text-[12px] font-bold rounded-[5px]"
               >2</span
             >
@@ -366,6 +375,7 @@
 
         <!-- cart modal -->
         <div
+          id="modal"
           class="w-full h-screen bg-[#11121b8c] absolute top-0 items-center justify-center hidden"
         >
           <div class="p-11 bg-white flex flex-col gap-4 rounded-[20px]">
@@ -411,132 +421,8 @@
                 </p>
               </li>
 
-              <!-- content -->
-              <li class="flex items-center border-b border-[#DBDFEA] py-4">
-                <div class="w-[278px] flex items-center gap-[7.36px]">
-                  <img
-                    src="./assets/black.png"
-                    alt="Black image"
-                    width="36.643px"
-                    height="41.786px"
-                    class="rounded-[3px]"
-                  />
-
-                  <p
-                    class="text-[#364A63] font-[roboto] text-[14px] leading-[165%]"
-                  >
-                    Classy Modern Smart watch
-                  </p>
-                </div>
-
-                <p
-                  class="text-[#364A63] font-[roboto] text-[14px] leading-[165%] w-[62px] text-center"
-                >
-                  Black
-                </p>
-
-                <p
-                  class="text-[#364A63] font-[roboto] text-[14px] leading-[165%] w-[69px] text-center"
-                >
-                  XL
-                </p>
-
-                <p
-                  class="text-[#364A63] font-[roboto] text-[14px] leading-[165%] w-[59px] text-center"
-                >
-                  1
-                </p>
-
-                <p
-                  class="text-[#364A63] font-[roboto] text-[14px] leading-[165%] w-[91px] text-right"
-                >
-                  $99.00
-                </p>
-              </li>
-
-              <li class="flex items-center border-b border-[#DBDFEA] py-4">
-                <div class="w-[278px] flex items-center gap-[7.36px]">
-                  <img
-                    src="./assets/black.png"
-                    alt="Black image"
-                    width="36.643px"
-                    height="41.786px"
-                    class="rounded-[3px]"
-                  />
-
-                  <p
-                    class="text-[#364A63] font-[roboto] text-[14px] leading-[165%]"
-                  >
-                    Classy Modern Smart watch
-                  </p>
-                </div>
-
-                <p
-                  class="text-[#364A63] font-[roboto] text-[14px] leading-[165%] w-[62px] text-center"
-                >
-                  Black
-                </p>
-
-                <p
-                  class="text-[#364A63] font-[roboto] text-[14px] leading-[165%] w-[69px] text-center"
-                >
-                  XL
-                </p>
-
-                <p
-                  class="text-[#364A63] font-[roboto] text-[14px] leading-[165%] w-[59px] text-center"
-                >
-                  1
-                </p>
-
-                <p
-                  class="text-[#364A63] font-[roboto] text-[14px] leading-[165%] w-[91px] text-right"
-                >
-                  $99.00
-                </p>
-              </li>
-
-              <li class="flex items-center border-b border-[#DBDFEA] py-4">
-                <div class="w-[278px] flex items-center gap-[7.36px]">
-                  <img
-                    src="./assets/black.png"
-                    alt="Black image"
-                    width="36.643px"
-                    height="41.786px"
-                    class="rounded-[3px]"
-                  />
-
-                  <p
-                    class="text-[#364A63] font-[roboto] text-[14px] leading-[165%]"
-                  >
-                    Classy Modern Smart watch
-                  </p>
-                </div>
-
-                <p
-                  class="text-[#364A63] font-[roboto] text-[14px] leading-[165%] w-[62px] text-center"
-                >
-                  Black
-                </p>
-
-                <p
-                  class="text-[#364A63] font-[roboto] text-[14px] leading-[165%] w-[69px] text-center"
-                >
-                  XL
-                </p>
-
-                <p
-                  class="text-[#364A63] font-[roboto] text-[14px] leading-[165%] w-[59px] text-center"
-                >
-                  1
-                </p>
-
-                <p
-                  class="text-[#364A63] font-[roboto] text-[14px] leading-[165%] w-[91px] text-right"
-                >
-                  $99.00
-                </p>
-              </li>
+              <!-- dynamic data -->
+              <div id="cart_details"></div>
             </ul>
 
             <!-- total price -->
@@ -567,6 +453,7 @@
               <!-- close modal -->
               <button
                 class="py-2 px-[18px] text-center border border-[#DBDFEA] rounded-[3px] text-[13px] font-[roboto font-bold leading-[153.846%] text-[#364A63]"
+                onclick="continueShopping()"
               >
                 Continue Shopping
               </button>
@@ -574,6 +461,7 @@
               <!-- checkout button -->
               <button
                 class="py-2 px-[18px] text-center border bg-[#6576FF] rounded-[3px] text-[13px] font-[roboto font-bold leading-[153.846%] text-white"
+                onclick="closeModal()"
               >
                 Checkout
               </button>
