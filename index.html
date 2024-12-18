@@ -33,6 +33,7 @@
             <!-- left side watch image -->
             <aside>
               <img
+                id="product_thumbnail"
                 src="./assets/purple.png"
                 alt="Watch picture"
                 width="630px"
@@ -190,7 +191,7 @@
                 <!-- buttons -->
                 <div class="flex items-center gap-[19px]">
                   <!-- purple button -->
-                  <button>
+                  <button onclick="changeThumbnail('purple')">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -210,7 +211,7 @@
                   </button>
 
                   <!-- cyan button -->
-                  <button>
+                  <button onclick="changeThumbnail('cyan')">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -223,7 +224,7 @@
                   </button>
 
                   <!-- blue button -->
-                  <button>
+                  <button onclick="changeThumbnail('blue')">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -236,7 +237,7 @@
                   </button>
 
                   <!-- black button -->
-                  <button>
+                  <button onclick="changeThumbnail('black')">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -354,7 +355,7 @@
 
         <!-- cart modal -->
         <div
-          class="w-full h-screen bg-[#11121b8c] absolute top-0 flex items-center justify-center"
+          class="w-full h-screen bg-[#11121b8c] absolute top-0 items-center justify-center hidden"
         >
           <div class="p-11 bg-white flex flex-col gap-4 rounded-[20px]">
             <!-- title -->
@@ -570,5 +571,8 @@
         </div>
       </section>
     </main>
+
+    <!-- js added -->
+    <script src="./script.js"></script>
   </body>
 </html>
