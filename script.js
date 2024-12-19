@@ -2,6 +2,8 @@ let cart = []; // initially cart is empty
 let quantity = 1; // initial quantity is 1
 let size = "S"; // initial size is S
 let brandColor = "purple"; // initial brand color is "purple"
+let finalPrice = 0; // initial final price is 0
+let finalQuantity = 0; // initial final quantity is 0
 
 // function to change the thumbnail
 function changeThumbnail(color) {
@@ -45,6 +47,9 @@ function addToCart() {
   const totalPrice = quantity * priceMap[size]; // get the latest price
   const thumbnail = document.getElementById("product_thumbnail").src; // get the latest thumbnail
 
+  finalPrice += totalPrice; // update the final price
+  finalQuantity += quantity; // update the final quantity
+
   const product = {
     thumbnail,
     brandColor,
@@ -76,6 +81,7 @@ function checkout() {
 
   cartDetails.innerHTML = ""; // clear the cart details
 
+  // show cart data on ui
   cart.reverse().map(
     (item) =>
       (cartDetails.innerHTML += `
@@ -125,6 +131,12 @@ function checkout() {
               </li>
     `)
   );
+
+  // set the final price on ui
+  document.getElementById("finalPrice").innerText = "$" + finalPrice.toString();
+
+  // set the final quantity on ui
+  document.getElementById("finalQuantity").innerText = finalQuantity.toString();
 }
 
 // funciton continue shoping

@@ -267,14 +267,14 @@
                 <!-- all sizes -->
                 <div class="flex items-center gap-3">
                   <button
-                    class="py-2 px-[18px] text-center rounded-[3px] border border-[#6576FF] text-[#8091A7] font-[roboto] text-[12px] leading-[20px]"
+                    class="py-2 px-[18px] text-center rounded-[3px] border border-[#6576FF] text-[#6576FF] font-[roboto] text-[14px] font-bold leading-[20px]"
                     onclick="changeSize('S')"
                   >
+                    S
                     <span
-                      class="text-[#6576FF] font-[roboto] text-[14px] font-bold leading-[142.857%]"
-                      >S
+                      class="text-[#8091A7] font-[roboto] text-[12px] leading-[142.857%]"
+                      >$69
                     </span>
-                    $69
                   </button>
 
                   <button
@@ -426,26 +426,28 @@
             </ul>
 
             <!-- total price -->
-            <div class="flex items-center justify-between">
+            <div class="flex items-center">
               <!-- title -->
               <p
-                class="w-[379px] text-[#373737] font-[roboto] text-[16px] font-bold leading-[137.5%]"
+                class="w-[409px] text-[#373737] font-[roboto] text-[16px] font-bold leading-[137.5%]"
               >
                 Total
               </p>
 
               <!-- total qnt -->
               <p
-                class="text-[#364A63] font-[roboto] text-[14px] font-bold leading-[242.857%]"
+                id="finalQuantity"
+                class="text-[#364A63] font-[roboto] text-[14px] font-bold leading-[242.857%] w-[59px] text-center"
               >
-                4
+                <!-- data will held dynamically -->
               </p>
 
               <!-- total price -->
               <p
-                class="text-[#364A63] font-[roboto] text-[18px] font-bold leading-[242.857%]"
+                id="finalPrice"
+                class="text-[#364A63] font-[roboto] text-[18px] font-bold leading-[242.857%] w-[91px] text-right"
               >
-                $356.00
+                <!-- data will held dynamically -->
               </p>
             </div>
 
